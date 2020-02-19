@@ -57,3 +57,35 @@ i {
     border: 1px solid #4c4c4c;
     border-radius: 4px;
 }
+
+.headerContainer {
+    padding: 15px;
+    height: 65px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+.mainSection
+{
+    text-align: center;
+
+}
+.mainSection, .formOutContainer, .formInnerContainer, .formContainerHeader
+{
+    width: 100%;
+}
+.listDiv
+{
+    text-align: center;
+    margin: auto;
+    width: 320px;
+}
+.headerImageList {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.headerImageList > li {
+
+}
