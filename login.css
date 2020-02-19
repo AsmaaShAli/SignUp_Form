@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.mainSection {
+    font-family: Helvetica,Helvetica,Arial,sans-serif;
+    background-color: #ECEEF1;
+    margin: 0px;
+    padding: 0px;
+}
+.topContainer {
+    width: 100%;
+    height : 60px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.topPanel {
+    float: right;
+    width: 350px;
+    font-size: 12px;
+    font-weight: 400;
+    
+    height: 100%;
+    color: #505050;
+    box-sizing: border-box;
+}
+.topLeftPanel {
+    margin-top: 2px;;
+    width: 65%;
+    text-align: right;
+    display: inline-block;
+}
+.allreadyDIV {
+    line-height: 1.5;
+}
+
+.topRightPanel
+{
+    text-align: right;
+    width: 35%;
+    height: 100%;
+    box-sizing: border-box;
+    float: right;
+}
+
+i {
+    margin-right: 2px;
+}
+.signInBtn {
+    background-color: #0077C5;
+    cursor: pointer;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    color: white;
+    border: 1px solid #4c4c4c;
+    border-radius: 4px;
+}
