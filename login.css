@@ -138,3 +138,82 @@ i {
     margin-top: 24px;
 
 }
+
+/*********************animation*********************/
+.intuit
+{
+    opacity: 0;
+    animation-duration: 3s;           
+    animation-name: intuit-animation; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes intuit-animation {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+  
+}
+
+.mintResize
+{
+    visibility: hidden;
+    margin-left: 150px ;
+    animation-delay: 1.25s;
+    animation-duration: 2s;           
+    animation-name: mint-animation; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes mint-animation {
+    0% {
+        width: 24px;
+        height: 24px;
+    }
+    50% {
+        width: 48px;
+        height: 48px;
+        margin-left: 150px;
+        visibility: visible;
+    }
+    100% {
+        margin-left: -40px;
+        visibility: visible;
+
+    }
+}
+
+.invisible {
+   /* visibility: hidden;
+    display: none;*/
+    opacity: 0;
+    animation-delay: 3s;
+    animation-duration: 2s;           
+    animation-name: element-animation; 
+    animation-fill-mode: forwards;
+}
+
+/*.listElement22 {
+    animation-delay: 3.25s;
+    animation-duration: 0.25s;           
+    animation-name: element-animation; 
+    animation-fill-mode: forwards;
+  
+    transition: display 2s;
+    transition-timing-function: ease-in-out;
+}*/
+
+@keyframes element-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/****************************************************/
+
