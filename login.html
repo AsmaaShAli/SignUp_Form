@@ -61,54 +61,51 @@
                                         </span>
                                     </span>
                                 </header>
-                                <form action="" class="">
-                                    <fieldset class="mailFieldSet">
-                                        <label for="" class="">Email address</label>
+                                <form action="">
+                                    <fieldset>
+                                        <label for="email" >Email address</label>
                                         <div class="inputBoxContainer tooltip">
-                                            
-                                            <input type="email" class="txtInput" placeholder1="You'll verify this later">
-                                            <span class="tooltiptext" style="top:-2px; left:100%; width:220px; height:30px;" role="alert">You'll use this as your user ID</span>
-                                            
+                                            <input id="email" name="email" type="email" class="txtInput" placeholder1="You'll verify this later" >
+                                            <span class="tooltiptext" style=" height:32px;" >You'll use this as your user ID</span>
                                         </div>
                                     </fieldset>
-                                    <fieldset class="phoneFieldSet">
-                                        <label for="" class="">Phone <span class="">(recommended)</span>
-                                        </label>                
-                                            <div class="inputBoxContainer tooltip">
-                                                <input type="tel" class="txtInput" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
-                                                placeholder="You'll verify this later" required="required" maxlength="100" autocomplete="off">                                       
-                                                <span class="tooltiptext" style="top:0px; left:0px; width:100px; height:100px;" role="alert">Tool Tip</span>
-                                                </input>
-                                                <span class="smFnt">Standard call, messaging or data rates may apply.</span>
-                                            </div>
-                                            
+                                    <fieldset>
+                                        <label for="tel" class="">Phone <span class="">(recommended)</span></label>                
+                                        <div class="inputBoxContainer tooltip">
+                                            <input id="tel" name="tel"  type="tel" class="txtInput" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                                                placeholder="" required="required" maxlength="100" autocomplete="off">                                       
+                                            <span class="tooltiptext" style="height:80px;" >We strongly recommend adding a phone number. This will help verify your account and keep it safe.</span>
+                                        </div>
+                                        <span class="smFnt">Standard call, messaging or data rates may apply.</span>
                             
                                     </fieldset>
-                                    <fieldset class="passwordFieldSet">
-                                        <label for="" class="">Password</label>
-                                        <div class="inputBoxContainer" style="display:flex; justify-items: flex-start; align-items: center; box-sizing: border-box; width: 100%; " class="">
-                                            <input type="password" style="width:80%; box-sizing: border-box;"  class="txtInput" placeholder="Don't reuse an old password">
-                                            <i style="color:gray;" class="fas fa-lock-open" style="width:20%; "></i> 
-                                        
+                                    <fieldset>
+                                        <label for="password">Password</label>
+                                        <div class="inputBoxContainer tooltip">
+                                            <input id="password" name="password" type="password" class="txtInput" placeholder="">
+                                            
+                                            <img src="images/unlock.png" alt="" style=" width: 24px; height: 24px; margin-top: 4px; margin-right: 10px;">
+                                            <span class="tooltiptext" style="height:80px;" >Create a password you’ve never used before. This will help keep your account safe.</span>
                                         </div>
                                     </fieldset>
                                     <div class="createAccountDIV">
                                         <button class="createAccountButton">
-                                            <span class=""></span>
+                                            <img src="images/lock.png" alt="" style="margin-right: 2px;">
                                             <span class="">Create Account</span>
                                         </button>
                                     </div>
                                 </form>
-                                <footer class="formFooter">
-                                    <span class="">
-                                        <span class="">
-                                            text
-                                            <br>
-                                            <a href="" class=""></a>
-                                            <span class=""></span>
-                                            <a href="" class=""></a>
+                                <footer class="">
+                                    <div class="privacyDIV">
+                                        <span >
+                                            <span class="privacyText">By clicking Create account, you agree to our </span><br>
+                                            <span class="privacyText"><a href="">Terms</a> and have read and acknowledge our <a href="" class="">Privacy Statement.</a></span>
+                                            
                                         </span>
-                                    </span>
+                                    </div>
+                                    <div class="bottomStripe">
+                                        Invisible reCAPTCHA by Google <a href="" style="margin-left: 4px; margin-right: 4px;"> Privacy Policy</a> and <a href="" style="margin-left: 4px;">Terms of Use.</a>
+                                    </div>
                                 </footer>
                             </section>
                         </div>
@@ -138,4 +135,7 @@
 
 <!--
 <i style="color:gray;" class="fal fa-lock-open-alt"> 
+
+    <i style="color:gray;" class="fas fa-lock-open" style="margin-top: 4px; margin-right: 10px; "></i> 
+
     -->

@@ -5,11 +5,12 @@ body {
 a {
     text-decoration: none;
     color: dodgerblue;
-
+    font-size: 12px;
 }
 fieldset {
     border: none;
-    padding: 15px 30px;
+    padding: 10px 30px 30px 30px;
+
     text-align: left;
     
 
@@ -17,29 +18,22 @@ fieldset {
 }
 fieldset > label {
     font-size: 14px;
-    line-height: 2.2;
+    line-height: 2.0;
     color: #404040;
-    padding-left: 2px;
+    padding-left: 0px;
 
 }
 
-.mainSection {
-    font-family: AvenirNext, Avenir, "Helvetica Neue", Helvetica , Arial, sans-serif;
-    background-color: #ECEEF1;
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-}
 .topContainer {
     width: 100%;
-    height : 60px;
+    height : 54px;
     padding: 10px 30px;
     box-sizing: border-box;
 }
 
 .topPanel {
     float: right;
-    width: 350px;
+    width: 330px;
     font-size: 12px;
     font-weight: 400;
     
@@ -48,10 +42,12 @@ fieldset > label {
     box-sizing: border-box;
 }
 .topLeftPanel {
-    margin-top: 2px;;
+    
     width: 65%;
     text-align: right;
     display: inline-block;
+    line-height: 1.5;
+
 }
 .allreadyDIV {
     line-height: 1.5;
@@ -78,15 +74,26 @@ i {
     color: white;
     border: 1px solid #4c4c4c;
     border-radius: 4px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.mainSection {
+    font-family: AvenirNext, Avenir, "Helvetica Neue", Helvetica , Arial, sans-serif;
+    background-color: #ECEEF1;
+    margin-top: 0px;
+    padding: 0px;
+    text-align: center;
+    height: 1000px;
 }
 
 .headerContainer {
-    padding: 10px;
-    height: 50px;
+    padding-top: 10px;
+    height: 44px;
     width: 100%;
     text-align: center;
     box-sizing: border-box;
-
+    margin-top: 14px;
 }
 
 .mainSection, .formOutContainer, .formInnerContainer, .formContainerHeader
@@ -120,11 +127,11 @@ i {
 }
 .formSection {
     margin: auto;
-    width: 400px;
+    width: 378px;
     background-color: white;
     border: 1px solid #c7c7c7;
-    border-radius: 4px;
-    padding-top: 30px;
+    border-radius: 2px;
+    padding-top: 24px;
     color: #4c4c4c;
     box-sizing: content-box;
 
@@ -139,7 +146,7 @@ i {
 
 }
 .formDesc {
-    margin-top: 24px;
+    margin-top: 14px;
     font-size: 14px;
 
 }
@@ -201,16 +208,6 @@ i {
     animation-fill-mode: forwards;
 }
 
-/*.listElement22 {
-    animation-delay: 3.25s;
-    animation-duration: 0.25s;           
-    animation-name: element-animation; 
-    animation-fill-mode: forwards;
-  
-    transition: display 2s;
-    transition-timing-function: ease-in-out;
-}*/
-
 @keyframes element-animation {
     0% {
         opacity: 0;
@@ -220,22 +217,21 @@ i {
     }
 }
 
-/****************************************************/
-/** {box-sizing: border-box;}*/
-
 .inputBoxContainer
 {
+    display: flex;
+    justify-content: center;
     border: 1px solid #c1c5c8;
     border-radius: 4px;
     width: 100%;
-    height: 30px;
-    box-sizing: border-box;
+    height: 32px;
+    box-sizing: content-box;
 }
 
 .txtInput {
     width: 100%;
     height: 100%;
-    background-color: grey;
+    
     border:none;
     outline: none;
     padding: 0px 10px;
@@ -243,13 +239,13 @@ i {
     font-weight: 300;
     color: black;
     margin: auto;
-    
+    border-radius: 4px;
 
 }
-.inputBoxContainer .txtInput:focus .inputBoxContainer {
+.inputBoxContainer:focus-within  {
     border:1px solid dodgerblue;
-    box-shadow: -1px 1px 3px dodgerblue, 1px -1px 3px dodgerblue;
-    ;
+    box-shadow: -1px 1px 2px 1px rgba(30, 144, 255, 0.3), 1px -1px 2px 1px rgba(30, 144, 255, 0.3);
+    
 }
 
 .smFnt {
@@ -259,7 +255,7 @@ i {
 .tooltip {
     position: relative;
     overflow: visible;
-    box-sizing: content-box;
+    
 }
 .tooltiptext {
     visibility: hidden;
@@ -272,10 +268,15 @@ i {
 
     position: absolute;
     z-index: 2;
-    top:50%;
-    left:50%;
-    padding:  8px 14px 0 14px;
+    top: 0px;
+    left:103%;
+    
+    width:180px;
+    padding:  0 20px 0 20px;
+    font-size: 12px;
 
+    display: flex;
+    align-items: center;
 }
 
 .tooltip:focus-within .tooltiptext {
@@ -285,7 +286,7 @@ i {
 .tooltip .tooltiptext::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 16px;
     right: 100%;
     margin-top: -5px;
     border-width: 5px;
@@ -293,4 +294,39 @@ i {
     border-color: transparent #333333 transparent transparent;
   }
 
- 
+  .createAccountDIV {
+      padding: 0px 30px;
+
+  }
+ .createAccountButton {
+    width: 100%;
+    height: 44px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(24, 115, 204);
+    color: whitesmoke;
+    font-size: 16px;
+
+ }
+
+ .privacyDIV {
+    height: 100px;
+    margin-top: 30px;
+    padding: 0px 30px;
+
+ }
+ .privacyText {
+     font-size: 12px;
+     font-style: italic;
+     margin-bottom: 0px;
+
+ }
+ .bottomStripe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #f0f0f0;
+    font-size: 10px;;
+
+ }
