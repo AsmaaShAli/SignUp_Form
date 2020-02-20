@@ -52,37 +52,44 @@
                         </div>
                         <div class="formBody">
                             <section class="formSection">
-                                <header class="">
+                                <header >
                                     <span class="formCaption">Create an Intuit account</span>
-                                    <span class="">
-                                        <span class="">
+                                    <span>
+                                        <span>
                                             <div class="formDesc">One account for everything Intuit, including Mint.</div>
-                                            <a href="" class="">Learn more</a>
+                                            <a href="" >Learn more</a>
                                         </span>
                                     </span>
                                 </header>
                                 <form action="" class="">
                                     <fieldset class="mailFieldSet">
                                         <label for="" class="">Email address</label>
-                                        <div class="">
-                                            <input type="email" class="">
+                                        <div class="tooltip">
+                                            
+                                            <input type="email" class="txtInput" placeholder1="You'll verify this later">
+                                            <span class="tooltiptext" style="top:-2px; left:100%; width:220px; height:30px;" role="alert">You'll use this as your user ID</span>
+                                            
                                         </div>
                                     </fieldset>
                                     <fieldset class="phoneFieldSet">
-                                        <label for="" class="">Phone<span class="">(recommended)</span>
+                                        <label for="" class="">Phone <span class="">(recommended)</span>
                                         </label>
                                         <div class="">
                                             <div class="">
-                                                <input type="text" class="">
+                                                <input type="tel" class="txtInput tooltip" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="You'll verify this later" required="required" maxlength="100" autocomplete="off">
+                                                <span class="tooltiptext" style="top:0px; left:0px; width:100px; height:100px;" role="alert">Tool Tip</span>
+                                                </input>
                                             </div>
-                                            <span class="">Standard call, messaging or data rates may apply.</span>
+                                            <span class="smFnt">Standard call, messaging or data rates may apply.</span>
                                         </div>
                                         
                                     </fieldset>
                                     <fieldset class="passwordFieldSet">
                                         <label for="" class="">Password</label>
-                                        <div class="">
-                                            <input type="text" class="" placeholder="Don't reuse an old password">
+                                        <div style="display:flex; justify-items: flex-start; align-items: center; box-sizing: border-box; width: 100%; " class="">
+                                            <input type="password" style="width:80%; box-sizing: border-box;"  class="txtInput" placeholder="Don't reuse an old password">
+                                            <i style="color:gray;" class="far fa-lock-open" style="width:20%; "></i> 
+                                        
                                         </div>
                                     </fieldset>
                                     <div class="createAccountDIV">
@@ -128,3 +135,7 @@
         </section>
     </body>
 </html>
+
+<!--
+<i style="color:gray;" class="fal fa-lock-open-alt"> 
+    -->

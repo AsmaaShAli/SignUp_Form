@@ -9,9 +9,10 @@ a {
 }
 fieldset {
     border: none;
-    padding: 30px;
+    padding: 15px 30px;
     text-align: left;
     
+
 
 }
 fieldset > label {
@@ -23,10 +24,11 @@ fieldset > label {
 }
 
 .mainSection {
-    font-family: Helvetica,Helvetica,Arial,sans-serif;
+    font-family: AvenirNext, Avenir, "Helvetica Neue", Helvetica , Arial, sans-serif;
     background-color: #ECEEF1;
     margin: 0px;
     padding: 0px;
+    text-align: center;
 }
 .topContainer {
     width: 100%;
@@ -79,18 +81,14 @@ i {
 }
 
 .headerContainer {
-    padding: 15px;
-    height: 65px;
+    padding: 10px;
+    height: 50px;
     width: 100%;
     text-align: center;
     box-sizing: border-box;
 
 }
-.mainSection
-{
-    text-align: center;
 
-}
 .mainSection, .formOutContainer, .formInnerContainer, .formContainerHeader
 {
     width: 100%;
@@ -100,6 +98,9 @@ i {
     text-align: center;
     margin: auto;
     width: 320px;
+    height: 48px;
+     
+
 }
 .headerImageList {
     display: flex;
@@ -119,11 +120,14 @@ i {
 }
 .formSection {
     margin: auto;
-    width: 420px;
+    width: 400px;
     background-color: white;
     border: 1px solid #c7c7c7;
     border-radius: 4px;
     padding-top: 30px;
+    color: #4c4c4c;
+    box-sizing: content-box;
+
 }
 .formCaption {
     font-size: 24px;
@@ -136,6 +140,7 @@ i {
 }
 .formDesc {
     margin-top: 24px;
+    font-size: 14px;
 
 }
 
@@ -216,4 +221,65 @@ i {
 }
 
 /****************************************************/
+* {box-sizing: border-box;}
 
+.txtInput {
+    border: 1px solid #c1c5c8;
+    border-radius: 4px;
+    width: 90%;
+    height: 30px;
+    outline: none;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    margin: auto;
+    
+
+}
+.txtInput:focus {
+    border:1px solid dodgerblue;
+    box-shadow: -1px 1px 3px dodgerblue, 1px -1px 3px dodgerblue;
+    ;
+}
+
+.smFnt {
+    font-size: 10px;
+}
+
+.tooltip {
+    position: relative;
+    overflow: visible;
+    box-sizing: content-box;
+}
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #333333;
+    color: whitesmoke;
+    text-align: left;
+    
+    border-radius: 4px;
+
+    position: absolute;
+    z-index: 2;
+    top:50%;
+    left:50%;
+    padding:  8px 14px 0 14px;
+
+}
+
+.tooltip:focus-within .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #333333 transparent transparent;
+  }
