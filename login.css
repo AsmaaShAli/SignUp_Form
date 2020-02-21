@@ -82,10 +82,11 @@ i {
     font-family: AvenirNext, Avenir, "Helvetica Neue", Helvetica , Arial, sans-serif;
     background-color: #ECEEF1;
     margin-top: 0px;
-    margin-bottom: 30px;
     padding: 0px;
-    text-align: center;
+    padding-bottom: 10px;
     
+    text-align: center;
+    cursor: pointer;
 }
 
 .headerContainer {
@@ -385,7 +386,7 @@ i {
  }
 .privacySection {
     position: fixed;
-    bottom :2px;
+    bottom :0px;
     right: 5%;
     background-color: #6b6c72;
     height: 50px;
