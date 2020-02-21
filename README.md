@@ -13,6 +13,7 @@ It contains an exact copy of the layout, and similar functionality (*Onload anim
 * HTML5
 * CSS3
 * Font Awsome Icons
+* linter and stickler validations
 
 # Live Demo
 [Live Demo Link](https://rawcdn.githack.com/AsmaaShAli/SignUp_Form/181fcde6cac9402e26b5c332ed0b5164c0988ac2/login.html)
