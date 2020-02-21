@@ -330,3 +330,55 @@ i {
     font-size: 10px;;
 
  }
+ .mainFooter
+ {
+     text-align: center;
+ }
+
+ .footerLinksDIV
+  {
+    margin: auto;
+   
+    width: 580px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    box-sizing: border-box;
+    color: #505050;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+ .footerList
+ {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    width: 300px; 
+    justify-content: center;
+    justify-items: center;
+    list-style-type: none;   
+    margin-top: 25px;  
+ }
+ .footerItem
+ {
+    margin-left: 10px;   
+   
+ }
+
+ .footerItem > a {
+    color:  #505050;
+    cursor: pointer;
+ } 
+
+ .footerItem:hover {
+     text-decoration: underline;
+ }
+
+ .privacyAndTerms {
+    color: #505050;
+    font-weight: 400;
+    font-size: 14px;
+ }
